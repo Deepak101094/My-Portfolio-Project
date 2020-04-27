@@ -1,10 +1,10 @@
 import React from "react";
+//? react-Typed
 import Typed from "react-typed";
 // import from @material-ui
 import { Typography, Box, Avatar, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-//import from hoc
-//import Layout from "../HOC/Layout";
+
 //? own image
 import avatar from "../avatar.png";
 
