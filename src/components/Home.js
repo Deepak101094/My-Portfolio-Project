@@ -4,6 +4,10 @@ import Typed from "react-typed";
 // import from @material-ui
 import { Typography, Box, Avatar, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+//? ui-icons
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 //? own image
 import avatar from "../avatar.png";
@@ -26,12 +30,21 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     color: "#E89786",
+    fontFamily: "Arial",
+    boxShadow: " 0 5px 10px 0 #888888" 
   },
   subtitle: {
     color: "white",
     marginBottom: "3rem",
     marginTop: "1rem",
   },
+  GridIcons: {
+    display: "flex",
+  },
+  icon1: {
+    margin: theme.spacing(0.5),
+  }
+
 }));
 
 const Home = () => {
@@ -56,6 +69,13 @@ const Home = () => {
           loop
         />
       </Typography>
+      <Grid className={classes.GridIcons} container justify="center">
+       <Avatar className= {classes.icon1} > 
+       <LinkedInIcon color= "action" fontSize="large" />
+       </Avatar>
+       <Avatar className= {classes.icon1} > <TwitterIcon /> </Avatar>
+       <Avatar className= {classes.icon1} > <GitHubIcon /> </Avatar>
+       </Grid>
     </Box>
   );
 };
