@@ -5,9 +5,9 @@ import Typed from "react-typed";
 import { Typography, Box, Avatar, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 //? ui-icons
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import TwitterIcon from "@material-ui/icons/Twitter";
 
 //? own image
 import avatar from "../avatar.png";
@@ -24,14 +24,15 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1,
   },
   avatar: {
-    width: theme.spacing(13),
-    height: theme.spacing(13),
-    margin: theme.spacing(1),
+    width: theme.spacing(20),
+    height: theme.spacing(20),
+    marginTop: theme.spacing(1),
   },
   title: {
     color: "#E89786",
     fontFamily: "Arial",
-    boxShadow: " 0 5px 10px 0 #888888" 
+    boxShadow: " 0 5px 10px 0 #008080",
+    justify: 'center'
   },
   subtitle: {
     color: "white",
@@ -41,10 +42,9 @@ const useStyles = makeStyles((theme) => ({
   GridIcons: {
     display: "flex",
   },
-  icon1: {
+  icons: {
     margin: theme.spacing(0.5),
-  }
-
+  },
 }));
 
 const Home = () => {
@@ -69,13 +69,28 @@ const Home = () => {
           loop
         />
       </Typography>
+      <Typography  variant="h5">
+        React, Redux, javaScript, HTML, CSS, Material-UI
+      </Typography>
       <Grid className={classes.GridIcons} container justify="center">
-       <Avatar className= {classes.icon1} > 
-       <LinkedInIcon color= "action" fontSize="large" />
-       </Avatar>
-       <Avatar className= {classes.icon1} > <TwitterIcon /> </Avatar>
-       <Avatar className= {classes.icon1} > <GitHubIcon /> </Avatar>
-       </Grid>
+        <Avatar className={classes.icons}>
+          <a href="https://www.linkedin.com/in/deepak-pandey-13b3791a7/">
+            <LinkedInIcon  />
+          </a>
+        </Avatar>
+        <Avatar className={classes.icons}>
+          <a href="https://github.com/Deepak101094">
+            {" "}
+            <GitHubIcon />{" "}
+          </a>
+        </Avatar>
+        <Avatar className={classes.icons}>
+          <a href="https://twitter.com/login">
+            {" "}
+            <TwitterIcon />{" "}
+          </a>
+        </Avatar>
+      </Grid>
     </Box>
   );
 };
