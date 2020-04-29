@@ -100,7 +100,7 @@ const Header = () => {
   return (
     <React.Fragment>
       <Box className={classes.root} component="nav">
-        <AppBar position="static" style={{ background: "#2F4F4F" }}>
+        <AppBar position="fixed" style={{ background: "#2F4F4F" }}>
           <Toolbar>
             <IconButton
               edge="start"
