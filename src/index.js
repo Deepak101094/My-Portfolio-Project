@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 //? own component
-import Resume from "./components/Resume";
+import Resume from "./container/Resume";
 
 ReactDOM.render(
   <Router>

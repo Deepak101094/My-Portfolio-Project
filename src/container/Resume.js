@@ -1,5 +1,5 @@
 import React from "react";
-//? import icons from images component
+//? import icons from images 
 import Image from "../images/education.jpg";
 import avatar from "../avatar.png";
 import cssIcon from "../images/css.png";
@@ -10,6 +10,7 @@ import reactnativeIcon from "../images/react_native.png";
 import reduxIcon from "../images/redux.png";
 import htmlIcon from "../images/html.jpeg";
 import materialIcon from "../images/material-ui.png";
+import bootstrapIcon from "../images/bootstrap-4.jpg";
 //? hoc
 import Layout from "../HOC/Layout";
 //? @matrial-ui import
@@ -31,6 +32,7 @@ import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 //?own component
 import SkillLevel from "./SkillLevel";
+import Skills from "./Skills";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -56,17 +58,17 @@ const useStyles = makeStyles((theme) => ({
   text: {
     color: "#ffffff",
     textAlign: "center",
-    margin: "2rem",
+    margin: "1rem",
   },
   leftHeading: {
-    marginTop: "3rem",
+    marginTop: "1rem",
   },
   detailPaper: {
    width: "auto",
    height: "auto",
    background: '#1e2f2f',
    color: "black",
-   marginTop: '3rem'
+   marginTop: '2rem'
   },
 
   paragraph: {
@@ -92,12 +94,18 @@ const useStyles = makeStyles((theme) => ({
   },
   card2: {
     maxWidth: 900,
-    height: 240,
+    height: 250,
     marginBottom: "1rem",
     background: "#330011",
     opacity: "0.8",
   },
-
+  card3: {
+    width: 900,
+    height: 400,
+    background: " #1e2f2f",
+    opacity: "1",
+    marginBottom: " 1rem",
+  },
   card4: {
     maxWidth: 900,
     height: "auto",
@@ -110,30 +118,7 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     marginLeft: "0.8rem",
   },
-  card3: {
-    width: 900,
-    height: 400,
-    background: " #1e2f2f",
-    opacity: "1",
-    marginBottom: " 1rem",
-  },
-  row: {
-    height: 100,
-    background: "white",
-    marginLeft: "1rem",
-    marginRight: "1rem",
-  },
-  ul: {
-    display: "flex",
-    justifyContent: "space-between",
-    hover: {
-      background: "blue",
-    },
-  },
-  reactIcon: {
-    width: "200px",
-    height: 90,
-  },
+ 
 }));
 
 const Resume = () => {
@@ -229,86 +214,24 @@ const Resume = () => {
 
               <Card container className={classes.card3}>
                 <Typography className={classes.fontHeading} variant="h3">
-                  {" "}
-                  Skills{" "}
-                </Typography>
-                <Grid container>
-                  <Grid item xs={12} container spacing={0}>
-                    <Grid item xs={12}>
-                      <div className={classes.row}>
-                        <ul className={classes.ul}>
-                          <li>
-                            <img
-                              src={reactIcon}
-                              className={classes.reactIcon}
-                              alt="react"
-                            />{" "}
-                          </li>
-                          <li>
-                            <img
-                              src={reduxIcon}
-                              className={classes.reactIcon}
-                              alt="redux"
-                            />{" "}
-                          </li>
-                          <li>
-                            <img
-                              src={gitIcons}
-                              className={classes.reactIcon}
-                              alt="git"
-                            />{" "}
-                          </li>
-                        </ul>
-                      </div>
-                    </Grid>
-                    <Grid item xs={12}>
-                      <div className={classes.row}>
-                        <ul className={classes.ul}>
-                          <li>
-                            <img
-                              src={htmlIcon}
-                              className={classes.reactIcon}
-                              alt="html"
-                            />{" "}
-                          </li>
-                          <li>
-                            <img
-                              src={cssIcon}
-                              className={classes.reactIcon}
-                              alt="css"
-                            />{" "}
-                          </li>
-                          <li>
-                            <img
-                              src={JavascriptIcon}
-                              className={classes.reactIcon}
-                              alt="javascript"
-                            />{" "}
-                          </li>
-                        </ul>
-                      </div>
-                    </Grid>
-                    <Grid item xs={12}>
-                      <div className={classes.row}>
-                        <ul className={classes.ul}>
-                          <li>
-                            <img
-                              src={materialIcon}
-                              className={classes.reactIcon}
-                              alt="material"
-                            />{" "}
-                          </li>
-                          <li>
-                            <img
-                              src={reactnativeIcon}
-                              className={classes.reactIcon}
-                              alt="native"
-                            />{" "}
-                          </li>
-                        </ul>
-                      </div>
-                    </Grid>
-                  </Grid>
+                Skills{" "}
+               </Typography>                        
+             <Grid item xs={12} container direction="row" className={classes.Grid} spacing={0}>
+                <Grid item xs={12} sm={4}>
+                <Skills imageSource={reactIcon} />
+                <Skills imageSource={reduxIcon} />
+                <Skills imageSource={reactnativeIcon}/>
+                </Grid>
+                <Grid item xs={12} sm={4}>
+                <Skills imageSource={JavascriptIcon} />
+                <Skills imageSource={htmlIcon} />
+                <Skills imageSource={gitIcons} />
+                </Grid>               
+                <Grid item xs={12} sm={4}>
+                <Skills imageSource={cssIcon} />
+                <Skills imageSource={materialIcon} />
+                <Skills imageSource={bootstrapIcon} />
+                </Grid>
                 </Grid>
               </Card>
 
@@ -317,13 +240,13 @@ const Resume = () => {
                   {" "}
                   Skill Level{" "}
                 </Typography>
-                <SkillLevel skill="Reactjs" progress="80" />
-                <SkillLevel skill="Reduxjs" progress="70" />
-                <SkillLevel skill="JavaScript" progress="60" />
-                <SkillLevel skill="GIT" progress="60" />
-                <SkillLevel skill="HTML" progress="80" />
-                <SkillLevel skill="CSS" progress="65" />
-                <SkillLevel skill="Material-UI" progress="70" />
+                <SkillLevel SkillLevel="Reactjs" progress="80" />
+                <SkillLevel SkillLevel="Reduxjs" progress="70" />
+                <SkillLevel SkillLevel="JavaScript" progress="60" />
+                <SkillLevel SkillLevel="GIT" progress="60" />
+                <SkillLevel SkillLevel="HTML" progress="80" />
+                <SkillLevel SkillLevel="CSS" progress="65" />
+                <SkillLevel SkillLevel="Material-UI" progress="70" />
               </Card>
             </Paper>
           </Grid>

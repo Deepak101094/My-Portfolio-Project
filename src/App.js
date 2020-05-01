@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./components/Home";
+import Home from "./container/Home";
 import "./App.css";
 //import from hoc
 import Layout from "./HOC/Layout/index";
