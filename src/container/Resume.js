@@ -31,8 +31,8 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 //?own component
-import SkillLevel from "./SkillLevel";
-import Skills from "./Skills";
+import SkillLevel from "../components/skills/SkillLevel";
+import Skills from "../components/skills/Skills";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -70,7 +70,6 @@ const useStyles = makeStyles((theme) => ({
    color: "black",
    marginTop: '2rem'
   },
-
   paragraph: {
     color: "white",
     marginLeft: "1rem",
@@ -82,15 +81,14 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "1rem",
   },
   image: {
-    flexGrow: 1,
-    width: "100%",
-    height: "100%",
-    textAlign: "center",
+    width: '100%',
+    height: '100%',  
+    textAlign: 'center',
+    backgroundSize: 'cover',
     backgroundImage: `url(${Image})`,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center center",
-    backgroundSize: "cover",
-    backgroundAttachment: "fixed",
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center' ,
+    
   },
   card2: {
     maxWidth: 900,
@@ -100,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
     opacity: "0.8",
   },
   card3: {
-    width: 900,
+   
     height: 400,
     background: " #1e2f2f",
     opacity: "1",
@@ -183,7 +181,7 @@ const Resume = () => {
                  <Paper className={classes.detailPaper}>
                  <h1> LinkedIn </h1>
                  <Typography variant="h6"> 
-                  <LinkedInIcon fontSize="large" />
+                  <LinkedInIcon fontSize="large" /><br/>
                   linkedin.com/in/deepak-pandey-13b3791a7
                  </Typography>
                  </Paper>
@@ -193,10 +191,6 @@ const Resume = () => {
           <Grid item sm={8} xs={12}>
             <Paper className={classes.paper}>
               <Card className={classes.card1}>
-                <Typography className={classes.fontHeading} variant="h3">
-                  {" "}
-                  Education{" "}
-                </Typography>
                 <div className={classes.image}> </div>
               </Card>
 
