@@ -1,6 +1,10 @@
 import React from "react";
 //? @matrial-ui import
 import { makeStyles } from "@material-ui/core/styles";
+import Card from "@material-ui/core/Card";
+
+
+
 const useStyles = makeStyles((theme) => ({
       row: {
         height: 100,
@@ -21,10 +25,11 @@ const useStyles = makeStyles((theme) => ({
       },
 }))
 
-const Skill = ({imageSource}) => {
+const Skill = ({imageSource, heading}) => {
     const classes= useStyles();
     return (
       <div container>
+         <Card> 
           <div className={classes.row}>
           <ul className={classes.ul}>
             <li>
@@ -36,6 +41,7 @@ const Skill = ({imageSource}) => {
             </li>          
           </ul>
         </div>
+        </Card>
       </div>
     )
 }
