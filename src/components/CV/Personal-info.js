@@ -21,13 +21,13 @@ const useStyles = makeStyles((theme) => ({
     card: {
         background: " #1e2f2f",
         opacity: "1",
-        height: 'auto'
       },
       avatar: {
         display: "block",
         margin: theme.spacing(1),
-        width: theme.spacing(25),
-        height: theme.spacing(25),
+        width: theme.spacing(26),
+        height: theme.spacing(26),
+        marginTop: "1rem"
       },
       divider: {
         background: "black",
@@ -35,17 +35,18 @@ const useStyles = makeStyles((theme) => ({
       text: {
         color: "#ffffff",
         textAlign: "center",
-        margin: "1rem",
+        margin: "1.4rem",
+
       },
       heading: {
-        marginTop: "1rem",
+        marginTop: "2rem",
       },
       paper: {
        width: "auto",
        height: "auto",
        background: '#1e2f2f',
        color: "black",
-       marginTop: '1.9rem'
+       marginTop: '2rem'
       },
       paragraph: {
         color: "white",

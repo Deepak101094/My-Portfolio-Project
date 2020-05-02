@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   card: {
     maxWidth: 900,
     height: 400,
-    marginBottom: "1rem",
+    marginBottom: "1rem"
   },
   image: {
     width: "100%",
@@ -51,7 +51,7 @@ function Education() {
           </Typography>
           <Typography className={classes.text} variant="h5">
             {" "}
-            Jun 2017 - May 2019{" "}
+            Jun 2014 - May 2017{" "}
           </Typography>
         </div>
       </Card>

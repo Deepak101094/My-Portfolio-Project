@@ -8,20 +8,23 @@ import Card from "@material-ui/core/Card";
 const useStyles = makeStyles((theme) => ({
       row: {
         height: 100,
-        background: "white",
-        marginLeft: "1rem",
-        marginRight: "1rem",
-      },
+        background: "#ffffff",
+        paddingLeft: '1rem',
+        paddingRight: '1rem'
+       },
       ul: {
         display: "flex",
-        justifyContent: "space-between",
-        hover: {
-          background: "blue",
-        },
+        marginTop: '1px'
       },
       reactIcon: {
         width: "200px",
         height: 90,
+        marginTop: '5px',
+        [theme.breakpoints.down("xs")]: {
+          width: "150px",
+          height: 70,
+          marginLeft: '2rem'
+        }
       },
 }))
 
@@ -29,19 +32,15 @@ const Skill = ({imageSource, heading}) => {
     const classes= useStyles();
     return (
       <div container>
-         <Card> 
           <div className={classes.row}>
-          <ul className={classes.ul}>
-            <li>
+          <ul className={classes.ul}> 
               <img
                 src={imageSource}
                 className={classes.reactIcon}
                 alt="react"
               />{" "}                
-            </li>          
-          </ul>
+              </ul>
         </div>
-        </Card>
       </div>
     )
 }

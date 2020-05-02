@@ -9,9 +9,9 @@ const useStyles = makeStyles((theme) =>({
     card: {
         maxWidth: 900,
         height: 250,
-        marginBottom: "1rem",
         background: "#330011",
         opacity: "0.8",
+        marginBottom: '1rem'
       },
       content: {
         color: "white",

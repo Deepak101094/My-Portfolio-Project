@@ -33,18 +33,23 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     background: "#1e2f2f",
     opacity: "1",
-    height: 'auto'
+  },
+  card1 : {
+    background: "#006666",
+    opacity: "2",
+    marginBottom: '1rem'
   },
   card2: {
-    maxWidth: 900,
-    height: "auto",
-    marginTop: "1rem",
     background: "#330000",
     opacity: "0.8",
+    marginBottom: '1.5rem'
   },
   heading: {
     color: "white",
     marginLeft: "0.8rem",
+    [theme.breakpoints.down("xs")]: {  
+      fontSize: '30px'
+    }
   }, 
 }));
 
@@ -54,7 +59,7 @@ const Resume = () => {
     <div className={classes.root}>
       <Grid container>
         <CssBaseline />
-        <Grid item xs={12} container spacing={0}>        
+        <Grid item xs={12} container>        
           <Grid item sm={4} xs={12}>           
              <PersonalInfo />            
           </Grid>
@@ -64,14 +69,15 @@ const Resume = () => {
              <Education />              
              <Experience />
              
+             <Card className={classes.card1}> 
              <Typography className={classes.heading} variant="h3">
                Skills
              </Typography>  
-             <Grid item xs={12} container  >
+             <Grid item xs={12} container >
                 <Grid item xs={12} sm={4}>
-                <Skills imageSource={reactIcon}  />
-                <Skills imageSource={reduxIcon}  />
-                <Skills imageSource={reactnativeIcon}  />
+                <Skills imageSource={reactIcon} />
+                <Skills imageSource={reduxIcon} />
+                <Skills imageSource={reactnativeIcon} />
                 </Grid>
                 <Grid item xs={12} sm={4}>
                 <Skills imageSource={JavascriptIcon} />
@@ -84,19 +90,22 @@ const Resume = () => {
                 <Skills imageSource={bootstrapIcon} />
                 </Grid>
                 </Grid>
+                </Card>
 
-              <Card className={classes.card2}>
+                <Card className={classes.card2}> 
                 <Typography className={classes.heading} variant="h3">
                    SkillLevel
                 </Typography>
                 <SkillLevel SkillLevel="Reactjs" progress="80" />
                 <SkillLevel SkillLevel="Reduxjs" progress="70" />
+                <SkillLevel SkillLevel="React-Native" progress="40" />
                 <SkillLevel SkillLevel="JavaScript" progress="60" />
                 <SkillLevel SkillLevel="GIT" progress="60" />
                 <SkillLevel SkillLevel="HTML" progress="80" />
                 <SkillLevel SkillLevel="CSS" progress="65" />
                 <SkillLevel SkillLevel="Material-UI" progress="70" />
-              </Card>
+                <SkillLevel SkillLevel="Bootstrap" progress="40" />
+                </Card>
             </Paper>
           </Grid>
         </Grid>

@@ -2,7 +2,7 @@ import React from 'react';
 import { lighten, makeStyles, createStyles, withStyles } from '@material-ui/core/styles';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import Grid from "@material-ui/core/Grid";
-import { Typography } from '@material-ui/core';
+import { Typography, Card } from '@material-ui/core';
 
 
 const BorderLinearProgress = withStyles({
@@ -30,7 +30,10 @@ const useStyles = makeStyles((theme) =>
     fontSize: "25px",
     marginLeft: "1rem",
     display: "flex",
-    marginTop: "2px"
+    marginTop: "2px",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "20px"
+    }
     }
   }),
 );
@@ -40,7 +43,7 @@ const SkillLevel =({ progress, SkillLevel }) => {
 
   return (
     <div className={classes.root} >
-    <Grid item xs={12} container >  
+    <Grid item xs={12} container >   
     <Grid item xs={12} sm={4}> 
      <Typography variant="h6" className={classes.SkillLevel}> {SkillLevel} </Typography>
     </Grid>      
