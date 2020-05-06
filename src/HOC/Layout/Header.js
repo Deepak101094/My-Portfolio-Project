@@ -122,9 +122,19 @@ const Header = () => {
               {sideList("right")}
             </MobilRightMenuSlider>
 
-            <Button color="inherit" onClick={() => history.push("/resume")}>
+            <Button color="inherit" onClick= {() => history.push("/resume")}>
               Resume
             </Button>
+            <Button color="inherit" onClick={() => history.push("/about") }>
+            About
+          </Button>
+          <Button color="inherit">
+          Project
+        </Button>
+        <Button color="inherit">
+        Contact
+      </Button>
+  
           </Toolbar>
         </AppBar>
       </Box>

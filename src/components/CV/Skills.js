@@ -1,45 +1,38 @@
 import React from "react";
+import "./Skill.css";
 //? @matrial-ui import
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 
 
-
-const useStyles = makeStyles((theme) => ({
-      row: {
-        height: 100,
-        background: "#ffffff",
-        paddingLeft: '1rem',
-        paddingRight: '1rem'
+ const useStyles = makeStyles((theme) => ({
+     root: {
+       height: 100,
+       [theme.breakpoints.down("sm")]: {
+         height: 120,
+        // margin: '2rem'
        },
-      ul: {
-        display: "flex",
-        marginTop: '1px'
-      },
-      reactIcon: {
-        width: "200px",
-        height: 90,
-        marginTop: '5px',
-        [theme.breakpoints.down("xs")]: {
-          width: "150px",
-          height: 70,
-          marginLeft: '2rem'
-        }
-      },
-}))
+       [theme.breakpoints.down("xs")]: {
+         height:100,
+         
+       },
+       [theme.breakpoints.down("md")]: {
+         height: 100,
+         margin: '1rem'
+       }
+     }
+ }))
 
-const Skill = ({imageSource, heading}) => {
+const Skill = ({imageSource}) => {
     const classes= useStyles();
     return (
-      <div container>
-          <div className={classes.row}>
-          <ul className={classes.ul}> 
+      <div container className={classes.root}>
+          <div className="icons">        
               <img
                 src={imageSource}
-                className={classes.reactIcon}
+                className="skillIcon"
                 alt="react"
-              />{" "}                
-              </ul>
+              />{" "}                           
         </div>
       </div>
     )

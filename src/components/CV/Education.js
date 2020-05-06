@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   card: {
     maxWidth: 900,
     height: 400,
-    marginBottom: "1rem"
+    marginBottom: "1rem",
   },
   image: {
     width: "100%",
@@ -23,21 +23,40 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     color: "#ffffff",
     marginLeft: "0.8rem",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "30px"
+    }
+
   },
   text: {
     color: "#ffffff",
     textAlign: "center",
     marginTop: "1rem",
+    [theme.breakpoints.down("xs")]:{
+      fontSize: "25px"
+    }
   },
+  text2: {
+    color: "#ffffff",
+    textAlign: "center",
+    marginTop: "1rem",
+    [theme.breakpoints.down("xs")]: {
+      fontSize:"20px",
+      textAlign:"center",
+      marginTop: "0.5rem",
+      color: "#ffffff"
+    }
+  }
 }));
 
 function Education() {
   const classes = useStyles();
+  
   return (
-    <div container>
+    <div container className="container">
       <Card className={classes.card}>
         <div className={classes.image}>
-          <Typography className={classes.heading} variant="h3">
+          <Typography className= {classes.heading} variant="h3">
             {" "}
             Education{" "}
           </Typography>
@@ -45,7 +64,7 @@ function Education() {
             {" "}
             Bachelor of Computer Application{" "}
           </Typography>
-          <Typography className={classes.text} variant="h6">
+          <Typography className={classes.text2} variant="h6">
             {" "}
             M.C.R.P University, Madhya Pradesh, India{" "}
           </Typography>

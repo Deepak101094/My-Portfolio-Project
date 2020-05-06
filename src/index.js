@@ -5,10 +5,14 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 //? own component
 import Resume from "./container/Resume";
+import About from "./container/About";
 
 ReactDOM.render(
   <Router>
     <Switch>
+      <Route exact path="/about"> 
+      <About />
+       </Route>
       <Route exact path="/resume">
         {" "}
         <Resume />{" "}

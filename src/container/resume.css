@@ -1,0 +1,9 @@
+.gridColumn {
+    flex-direction: row;
+}
+
+@media only screen and (max-width:786px) {
+    .gridColumn {
+        flex-direction: column;
+    }
+}

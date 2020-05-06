@@ -1,0 +1,60 @@
+.card {
+  height: 1400px;
+}
+  .divider {
+    background-color: black;
+  }
+  .text {
+    color: #867b7b;
+    text-align: center;
+    margin: 1rem;
+    font-size: 30px;
+    font-weight: 20px;
+    margin-top: 5rem;
+  }
+  .heading {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 35px;
+    font-weight: 15px;
+  }
+ .paragraph {
+    color: "white";
+    margin-left: 1rem;
+    font-family: "Palatino Linotype";
+    font-size: 20px;
+    flex-direction: row;
+  }
+  .paper {
+      flex-direction: row;
+  }
+ 
+  @media only screen and (max-width:786px) {
+    .text {
+      color: #867b7b;
+      text-align: center;
+      margin: 1rem;
+      font-size: 20px;
+      font-weight: 20px;
+      margin-top: 2rem;
+    }
+    .heading {
+      margin-top: 1rem;
+      margin-left: 1rem;
+      font-size: 15px;
+      font-weight: 10px;
+    }
+   .paragraph {
+      color: "white";
+      margin-left: 1rem;
+      font-family: "Palatino Linotype";
+      font-size: 15px;
+      flex-direction: column;
+    }
+    .detail {
+      font-size: 20px;
+      margin-left: 2px;
+      
+    }
+  
+  }

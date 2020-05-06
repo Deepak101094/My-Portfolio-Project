@@ -8,7 +8,7 @@ import { Typography, Card } from '@material-ui/core';
 const BorderLinearProgress = withStyles({
   root: {
     height: 20,
-    backgroundColor: lighten("#ffffff", 0.2),
+    backgroundColor: lighten("#nnnnnn", 0.2),
     borderRadius: 20
   },
   bar: {
@@ -26,13 +26,12 @@ const useStyles = makeStyles((theme) =>
       margin: theme.spacing(1),
     },
     SkillLevel: {
-    color: "white",
-    fontSize: "25px",
+    fontSize : "20px",
     marginLeft: "1rem",
     display: "flex",
     marginTop: "2px",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "20px"
+      fontSize: "15px"
     }
     }
   }),
@@ -45,7 +44,7 @@ const SkillLevel =({ progress, SkillLevel }) => {
     <div className={classes.root} >
     <Grid item xs={12} container >   
     <Grid item xs={12} sm={4}> 
-     <Typography variant="h6" className={classes.SkillLevel}> {SkillLevel} </Typography>
+     <h2 className={classes.SkillLevel}> {SkillLevel} </h2>
     </Grid>      
      <Grid item xs={12} sm={8}> 
       <BorderLinearProgress
