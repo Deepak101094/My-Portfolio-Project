@@ -1,56 +1,59 @@
-import React from 'react';
-//? hoc
+import React from "react";
 import Layout from "../HOC/Layout";
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import "./about.css";
+import CssBaseline from "@material-ui/core/CssBaseline";
+//import {makeStyles} from "@material-ui/core/styles";
+import Grid from "@material-ui/core/Grid";
+//import Button from "@material-ui/core/Button";
+//import { green } from "@material-ui/core/colors";
 
-const useStyles = makeStyles({
-  root: {
-    
-  },
-  media: {
-    height: "auto",
-  },
-});
 
-const About =() =>  {
-  const classes = useStyles();
-
+const About = () => {
+  //const classes = useStyle();
   return (
-      <div container className={classes.root}> 
-    <Card>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>
+    <div className="base">
+      <CssBaseline />
+      <Grid container direction="column">
+        <Grid container>
+          <Grid item xs={0} sm={1} />
+
+          <Grid item xs={12} sm={10}>
+            <div className="about">
+              <h1> About me </h1>{" "}
+              <div className="line" />
+              <p>
+                {" "}
+                I am a Front End Developer and UI/UX Designer. I love to design
+                awesome websites with great user experience. I am passionate
+                about my work and i never get bore from my work because i love
+                what i do. I write clean, elegant and efficient code because i
+                believe that code is written to read (by humans as well) and not
+                just to be executed by machines. I like to learn new
+                technologies and keep myself updated. I work on HTML, CSS,
+                JavaScript, ReactJs, JQuery, Bootstrap, React-Native etc. Apart
+                from this, i like to play cricket and basketball ,listen
+                music,singing song and travelling.
+              </p>        
+            </div>
+          
+            <div className="cirtificate">
+             <h1> cirtificate </h1>
+             <div className="line" />
+            <div className="card">
+            
+             </div>
+            </div>
+
+            <div className="button"> 
+            <button className="main-button"> Download CV</button>
+            </div>
+            
+            
+            </Grid>
+          <Grid item xs={0} sm={1} />
+        </Grid>
+      </Grid>
     </div>
   );
-}
+};
 export default Layout(About);
