@@ -32,6 +32,9 @@ root: {
   marginTop: "4rem",
   backgroundColor: '#ffffff'
 },
+card: {
+marginTop: '1rem'
+},
 skill: {
   fontSize: "40px",
   marginLeft: "1rem",
@@ -82,7 +85,7 @@ const Resume = () => {
         </CardActionArea>
          </Card>
          
-         <Card> 
+         <Card className={classes.card}> 
          <CardActionArea> 
          <h1 className={classes.skill}>SkillLevel</h1>
         <SkillLevel progress={70} SkillLevel="React"/>

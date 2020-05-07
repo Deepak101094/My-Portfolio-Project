@@ -1,27 +1,25 @@
 import React from 'react';
 import "./Experience.css";
 //? import from material-ui
-//import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import Divider from "@material-ui/core/Divider";
-//import Typography from "@material-ui/core/Typography";
+import Typography from "@material-ui/core/Typography";
 import { CardActionArea } from '@material-ui/core';
 
-// const useStyles = makeStyles((theme) =>({
-//     card: {
-//         maxWidth: 900,
-//         height: 250,
-//         background: "#330011",
-//         opacity: "0.8",
-//         marginBottom: '1rem'
-//       },
-// }));
+ const useStyles = makeStyles((theme) =>({
+     card: {
+         maxWidth: 900,
+        // height: 220,
+         marginBottom: '1rem'
+       },
+ }));
 
 function Experience() {
-    //const classes = useStyles();
+    const classes = useStyles();
     return (
         <div container>
-        <Card className=".card">
+        <Card className={classes.card}>
         <CardActionArea> 
         <h1 className="h1">
           Experience{" "}

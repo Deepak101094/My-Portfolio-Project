@@ -22,11 +22,9 @@ const useStyles = makeStyles((theme) =>
     root: {
       flexGrow: 1,
     },
-    margin: {
-      margin: theme.spacing(1),
-    },
+ 
     SkillLevel: {
-    fontSize : "20px",
+    fontSize : "19px",
     marginLeft: "1rem",
     display: "flex",
     marginTop: "2px",
