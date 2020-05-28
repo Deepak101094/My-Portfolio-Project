@@ -77,7 +77,7 @@ const Header = () => {
     <Box
       className={classes.menuSliderContainer}
       component="div"
-      onoClick={toggleSlider(slider, false)}
+      onClick={toggleSlider(slider, false)}
     >
       <Avatar className={classes.avatar} src={avatar} alt="Deepak" />
       <Divider />

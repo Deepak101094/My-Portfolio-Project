@@ -2,7 +2,7 @@ import React from "react";
 import "./Skill.css";
 //? @matrial-ui import
 import { makeStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
+
 
 
  const useStyles = makeStyles((theme) => ({

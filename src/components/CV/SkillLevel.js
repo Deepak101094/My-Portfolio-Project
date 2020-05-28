@@ -2,7 +2,7 @@ import React from 'react';
 import { lighten, makeStyles, createStyles, withStyles } from '@material-ui/core/styles';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import Grid from "@material-ui/core/Grid";
-import { Typography, Card } from '@material-ui/core';
+
 
 
 const BorderLinearProgress = withStyles({

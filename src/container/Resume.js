@@ -17,9 +17,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
-import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
 //?own component
 import SkillLevel from "../components/CV/SkillLevel";
 import PersonalInfo from "../components/CV/Personal-info";
