@@ -6,10 +6,14 @@ import * as serviceWorker from "./serviceWorker";
 //? own component
 import Resume from "./container/Resume";
 import About from "./container/About";
+import Project from "./container/Project";
 
 ReactDOM.render(
   <Router>
     <Switch>
+      <Route exact path="/project">
+      <Project />
+      </Route>
       <Route exact path="/about"> 
       <About />
        </Route>

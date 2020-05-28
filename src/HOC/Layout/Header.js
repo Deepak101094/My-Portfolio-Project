@@ -125,10 +125,10 @@ const Header = () => {
             <Button color="inherit" onClick= {() => history.push("/resume")}>
               Resume
             </Button>
-            <Button color="inherit" onClick={() => history.push("/about") }>
+            <Button color="inherit" onClick={() => history.push("/about")}>
             About
           </Button>
-          <Button color="inherit">
+          <Button color="inherit" onClick={() => history.push("/project")}>
           Project
         </Button>
         <Button color="inherit">
