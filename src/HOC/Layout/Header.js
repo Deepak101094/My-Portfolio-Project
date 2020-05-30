@@ -1,4 +1,6 @@
 import React from "react";
+//?own component
+import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
 //@material-ui import
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
@@ -120,6 +122,7 @@ const Header = () => {
               onClose={toggleSlider("right", false)}
             >
               {sideList("right")}
+              <Footer />
             </MobilRightMenuSlider>
 
             <Button color="inherit" onClick= {() => history.push("/resume")}>
@@ -131,7 +134,7 @@ const Header = () => {
           <Button color="inherit" onClick={() => history.push("/project")}>
           Project
         </Button>
-        <Button color="inherit">
+        <Button color="inherit" onClick={() => history.push("/contacts")}>
         Contact
       </Button>
   
