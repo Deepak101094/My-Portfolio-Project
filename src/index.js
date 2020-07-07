@@ -7,10 +7,14 @@ import * as serviceWorker from "./serviceWorker";
 import Resume from "./container/Resume";
 import About from "./container/About";
 import Project from "./container/Project";
+import Contact from "./container/Contact";
 
 ReactDOM.render(
   <Router>
     <Switch>
+    <Route exact path="/contacts">
+    <Contact />
+    </Route>
       <Route exact path="/project">
       <Project />
       </Route>

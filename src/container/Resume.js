@@ -52,11 +52,11 @@ const Resume = () => {
         <CssBaseline />
         <div>
         <Grid container>
-        <Grid item xs={12} sm={4}>        
+        <Grid item xs={12} sm={4} md={4}>        
         <PersonalInfo />     
         </Grid>
           
-        <Grid item xs={12} sm={8}> 
+        <Grid item xs={12} sm={8} md={8}> 
         <Education />
         <Experience />
 

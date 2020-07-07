@@ -34,16 +34,21 @@ const useStyle = makeStyles((theme) => ({
       marginRight: "5px"
     }
   },
+  root: {
+    position: 'absolute',
+    background: "#233",
+    height: "100vh"
+  }
 
 }));
 
 const About = () => {
   const classes = useStyle();
   return (
-    <div style={{position:"abolute"}}>
+    <div className={classes.root}>
       <CssBaseline />
       <Grid container direction="column">
-        <Grid container>
+      <Grid container>
           <Grid item xs={0} sm={1} />
 
           <Grid item xs={12} sm={10}>

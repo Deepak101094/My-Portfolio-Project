@@ -114,7 +114,9 @@ const Header = () => {
               <MenuIcon />
             </IconButton>
             <Typography className={classes.title} variant="h6">
-              Portfolio
+              <Button color="inherit" onClick={() => history.push("/")}>
+                Portfolio
+              </Button>
             </Typography>
             <MobilRightMenuSlider
               anchor="left"
@@ -125,19 +127,9 @@ const Header = () => {
               <Footer />
             </MobilRightMenuSlider>
 
-            <Button color="inherit" onClick= {() => history.push("/resume")}>
+            <Button color="inherit" onClick={() => history.push("/resume")}>
               Resume
             </Button>
-            <Button color="inherit" onClick={() => history.push("/about")}>
-            About
-          </Button>
-          <Button color="inherit" onClick={() => history.push("/project")}>
-          Project
-        </Button>
-        <Button color="inherit" onClick={() => history.push("/contacts")}>
-        Contact
-      </Button>
-  
           </Toolbar>
         </AppBar>
       </Box>
