@@ -10,29 +10,27 @@ import Project from "./container/Project";
 import Contact from "./container/Contact";
 
 ReactDOM.render(
-  <Router>
-    <Switch>
-    <Route exact path="/contacts">
-    <Contact />
-    </Route>
-      <Route exact path="/project">
-      <Project />
-      </Route>
-      <Route exact path="/about"> 
-      <About />
-       </Route>
-      <Route exact path="/resume">
-        {" "}
-        <Resume />{" "}
-      </Route>
-      <Route exact path="/">
-        {" "}
-        <App />{" "}
-      </Route>
-    </Switch>
-  </Router>,
+   <Router>
+      <Switch>
+         <Route exact path="/contacts">
+            <Contact />
+         </Route>
+         <Route exact path="/project">
+            <Project />
+         </Route>
+         <Route exact path="/about">
+            <About />
+         </Route>
+         <Route exact path="/resume">
+            <Resume />
+         </Route>
+         <Route exact path="/">
+            <App />
+         </Route>
+      </Switch>
+   </Router>,
 
-  document.getElementById("root")
+   document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

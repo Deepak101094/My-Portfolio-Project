@@ -17,95 +17,93 @@ import EmailIcon from "@material-ui/icons/Email";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import "./Personal-Info.css";
 
-
 const useStyles = makeStyles((theme) => ({
-  avatar: {
-    display: "block",
-    margin: theme.spacing(1),
-    width: theme.spacing(26),
-    height: theme.spacing(26),
-    marginTop: "3rem",
-    [theme.breakpoints.down("xs")]: {
-      width: theme.spacing(15),
-      height: theme.spacing(15),
+   avatar: {
+      display: "block",
+      margin: theme.spacing(1),
+      width: theme.spacing(26),
+      height: theme.spacing(26),
+      marginTop: "3rem",
+      [theme.breakpoints.down("xs")]: {
+         width: theme.spacing(15),
+         height: theme.spacing(15),
+         marginTop: "2rem",
+         display: "block",
+      },
+   },
+   paper: {
+      width: "auto",
+      height: "auto",
+      color: "black",
       marginTop: "2rem",
-      display: "block"
-    }
-  },
-  paper: {
-    width: "auto",
-    height: "auto",
-    color: "black",
-    marginTop: "2rem",
-  },
+   },
 }));
 
 function PersonalInfo() {
-  const classes = useStyles();
-  return (
-    <div container>
-      <Card>
-        <CardActionArea>
-          <Grid container justify="center">
-            <Avatar className={classes.avatar} src={avatar} alt="deepak" />
-          </Grid>
-          <Divider className={classes.divider} variant="fullWidth" />
+   const classes = useStyles();
+   return (
+      <div container>
+         <Card>
+            <CardActionArea>
+               <Grid container justify="center">
+                  <Avatar className={classes.avatar} src={avatar} alt="deepak" />
+               </Grid>
+               <Divider className={classes.divider} variant="fullWidth" />
 
-          <h2 className="text">Deepak Pandey</h2>
+               <h2 className="text">Deepak Pandey</h2>
 
-          <h3 className="heading"> Web Developer </h3>
+               <h3 className="heading"> Web Developer </h3>
 
-          <Divider className={classes.divider} variant="middle" />
-          <p className="paragraph">
-            An experienced web developer with a strong interest in projects that
-            require both conceptual and analytical thinking. Fully-committed to
-            designing and developing innovative web-based materials that users
-            will love. Always eager to learn new technologies being introduced
-            in the market.
-          </p>
-          <Divider className={classes.divider} variant="middle" />
-          <div className="paper">
-            <Paper className={classes.paper}>
-              <h1 className="detail"> Address </h1>
-              <Typography variant="h6">
-                <ContactMailIcon fontSize="large" />
-                <br />
-                10B/608 Vrindavan Yojna2 Raibareli Road Lucknow(u.p) 
-              </Typography>
-            </Paper>
-            <Paper className={classes.paper}>
-              <h1 className="detail"> Phone </h1>
-              <Typography variant="h6">
-                <PhoneIcon fontSize="large" />
-                <br />
-                6392453922
-              </Typography>
-            </Paper>
-            <Paper className={classes.paper}>
-              <h1 className="detail"> Email </h1>
-              <Typography variant="h6">
-                <EmailIcon fontSize="large" />
-                <br />
-                deepakpandey101094@gmail.com
-              </Typography>
-            </Paper>
-            <Paper className={classes.paper}>
-              <h1 className="detail"> Skype </h1>
-              <Typography variant="h6">6392453922</Typography>
-            </Paper>
-            <Paper className={classes.paper}>
-              <h1 className="detail"> LinkedIn </h1>
-              <Typography variant="h6">
-                <LinkedInIcon fontSize="large" />
-                <br />
-                linkedin.com/in/deepak-pandey-13b3791a7
-              </Typography>
-            </Paper>
-          </div>
-        </CardActionArea>
-      </Card>
-    </div>
-  );
+               <Divider className={classes.divider} variant="middle" />
+               <p className="paragraph">
+                  An experienced web developer with a strong interest in projects that require both
+                  conceptual and analytical thinking. Fully-committed to designing and developing
+                  innovative web-based materials that users will love. Always eager to learn new
+                  technologies being introduced in the market.
+               </p>
+               <Divider className={classes.divider} variant="middle" />
+               <div className="paper ml-3">
+                  <Paper className={classes.paper}>
+                     <h1 className="detail"> Address </h1>
+                     <Typography variant="h6">
+                        <ContactMailIcon fontSize="large" />
+                        <br />
+                        10B/608 Vrindavan Yojna2 Raibareli Road Lucknow(u.p)
+                     </Typography>
+                  </Paper>
+                  <Paper className={classes.paper}>
+                     <h1 className="detail"> Phone </h1>
+                     <Typography variant="h6">
+                        <PhoneIcon fontSize="large" />
+                        <br />
+                        6392453922
+                     </Typography>
+                  </Paper>
+                  <Paper className={classes.paper}>
+                     <h1 className="detail"> Email </h1>
+                     <Typography variant="h6">
+                        <EmailIcon fontSize="large" />
+                        <br />
+                        deepakpandey101094@gmail.com
+                     </Typography>
+                  </Paper>
+                  <Paper className={classes.paper}>
+                     <h1 className="detail"> Skype </h1>
+                     <Typography variant="h6">6392453922</Typography>
+                  </Paper>
+                  <Paper className={classes.paper}>
+                     <h1 className="detail"> LinkedIn </h1>
+                     <Typography variant="h6">
+                        <LinkedInIcon fontSize="large" />
+                        <br />
+                        linkedin.com/in/deepak-pandey-13b3791a7
+                     </Typography>
+                  </Paper>
+               </div>
+            </CardActionArea>
+         </Card>
+      </div>
+   );
 }
 
 export default PersonalInfo;
