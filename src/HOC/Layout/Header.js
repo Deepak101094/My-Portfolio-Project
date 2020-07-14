@@ -61,7 +61,7 @@ const menuItems = [
    { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
    { listIcon: <InfoIcon />, listText: "About", listPath: "/about" },
    { listIcon: <Apps />, listText: "Project", listPath: "/project" },
-   { listIcon: <ContactMail />, listText: "Contacts", listPath: "/contacts" },
+   { listIcon: <ContactMail />, listText: "Contact", listPath: "/contacts" },
 ];
 
 const Header = () => {

@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
       width: "auto",
       height: "auto",
       color: "black",
-      marginTop: "2rem",
+      marginTop: "1rem",
    },
 }));
 
@@ -64,7 +64,7 @@ function PersonalInfo() {
                <Divider className={classes.divider} variant="middle" />
                <div className="paper ml-3">
                   <Paper className={classes.paper}>
-                     <h1 className="detail"> Address </h1>
+                     <h3 className="detail"> Address </h3>
                      <Typography variant="h6">
                         <ContactMailIcon fontSize="large" />
                         <br />
@@ -72,7 +72,7 @@ function PersonalInfo() {
                      </Typography>
                   </Paper>
                   <Paper className={classes.paper}>
-                     <h1 className="detail"> Phone </h1>
+                     <h3 className="detail"> Phone </h3>
                      <Typography variant="h6">
                         <PhoneIcon fontSize="large" />
                         <br />
@@ -80,7 +80,7 @@ function PersonalInfo() {
                      </Typography>
                   </Paper>
                   <Paper className={classes.paper}>
-                     <h1 className="detail"> Email </h1>
+                     <h3 className="detail"> Email </h3>
                      <Typography variant="h6">
                         <EmailIcon fontSize="large" />
                         <br />
@@ -88,11 +88,11 @@ function PersonalInfo() {
                      </Typography>
                   </Paper>
                   <Paper className={classes.paper}>
-                     <h1 className="detail"> Skype </h1>
+                     <h3 className="detail"> Skype </h3>
                      <Typography variant="h6">6392453922</Typography>
                   </Paper>
                   <Paper className={classes.paper}>
-                     <h1 className="detail"> LinkedIn </h1>
+                     <h3 className="detail"> LinkedIn </h3>
                      <Typography variant="h6">
                         <LinkedInIcon fontSize="large" />
                         <br />
