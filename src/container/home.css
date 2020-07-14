@@ -21,3 +21,8 @@
 .social-icon:hover {
    color: #fff;
 }
+.abc {
+   justify-content: center;
+   font-weight: bold;
+   color: whitesmoke;
+}
