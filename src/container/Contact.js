@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+//?react-toastify
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 //?hoc
 import Layout from "../HOC/Layout";
 import Footer from "../components/Footer";
@@ -63,17 +66,15 @@ const useStyles = makeStyles({
     background: "green",
   },
   errorMsg: {
-     margin: "10px 0px",
-     color: "red"
-  }
+    margin: "10px 0px",
+    color: "red",
+  },
 });
 
 const Contact = () => {
   const classes = useStyles();
   const [loading, setLoading] = useState(false);
-  const [ error, setError ] = useState(false);
-  const [ successMsg, setSuccessMsg ] = useState(false);
-  const { register, handleSubmit, errors} = useForm();
+  const { register, handleSubmit, errors } = useForm();
 
   const onSubmitHandler = (formdata, e) => {
     setLoading(true);
@@ -101,16 +102,17 @@ const Contact = () => {
     })
       .then((res) => {
         setLoading(false);
-       // console.log(res, "result");
-      if(res.status === 200) {
-         setSuccessMsg(true);
-      }
+        // console.log(res, "result");
+        if (res.status === 200) {
+          toast.success("Mail Sent Successfully!");
+        }
       })
       .catch((err) => {
-         setError(err)
-       // console.log(err, "error");
+        // console.log(err, "error");
+        setLoading(false);
+        toast.error("Something went wrong!");
       });
-      e.target.reset();
+    e.target.reset();
   };
 
   return (
@@ -151,13 +153,13 @@ const Contact = () => {
                       inputProps={{ style: { color: "white" } }}
                       margin="dense"
                       size="large"
-                      inputRef={register({required: true})}
+                      inputRef={register({ required: true })}
                     />
                     {errors.name && errors.name.type === "required" && (
-                     <div className={classes.errorMsg}>
-                       <WarningIcon /> Your Name is Required
-                     </div>
-                   )}
+                      <div className={classes.errorMsg}>
+                        <WarningIcon /> Your Name is Required
+                      </div>
+                    )}
                     <br />
                     <InputField
                       name="email"
@@ -167,12 +169,12 @@ const Contact = () => {
                       inputProps={{ style: { color: "white" } }}
                       margin="dense"
                       size="medium"
-                      inputRef={register({required: true})}
+                      inputRef={register({ required: true })}
                     />
                     {errors.email && errors.email.type === "required" && (
-                     <div className={classes.errorMsg}>
-                       <WarningIcon /> Your Email is Required!
-                     </div>
+                      <div className={classes.errorMsg}>
+                        <WarningIcon /> Your Email is Required!
+                      </div>
                     )}
                     <br />
                     <InputField
@@ -183,12 +185,12 @@ const Contact = () => {
                       inputProps={{ style: { color: "white" } }}
                       margin="dense"
                       size="medium"
-                      inputRef={register({required: true})}
+                      inputRef={register({ required: true })}
                     />
                     {errors.subject && errors.subject.type === "required" && (
-                     <div className={classes.errorMsg}>
-                       <WarningIcon /> pls tell me your subject type!
-                     </div>
+                      <div className={classes.errorMsg}>
+                        <WarningIcon /> pls tell me your subject type!
+                      </div>
                     )}
                     <br />
                     <InputField
@@ -201,12 +203,12 @@ const Contact = () => {
                       variant="outlined"
                       inputProps={{ style: { color: "white" } }}
                       margin="dense"
-                      inputRef={register({required: true})}
+                      inputRef={register({ required: true })}
                     />
                     {errors.message && errors.message.type === "required" && (
-                     <div className={classes.errorMsg}>
-                       <WarningIcon /> pls write here your message!
-                     </div>
+                      <div className={classes.errorMsg}>
+                        <WarningIcon /> pls write here your message!
+                      </div>
                     )}
                     <br />
                     {loading ? (
@@ -215,7 +217,6 @@ const Contact = () => {
                         <CircularProgress />{" "}
                       </div>
                     ) : (
-                       <div>
                       <Button
                         className={classes.button}
                         size="large"
@@ -224,24 +225,14 @@ const Contact = () => {
                         endIcon={<SendIcon />}
                         type="submit"
                         disabled={
-                           errors.name ||
-                           errors.email ||
-                           errors.subject ||
-                           errors.message
-                         }
+                          errors.name ||
+                          errors.email ||
+                          errors.subject ||
+                          errors.message
+                        }
                       >
                         Send Message
                       </Button>
-                      {successMsg ? (
-                         <h5>Mail Sent Successfully!</h5>
-                      ) : (
-                         <div>
-                         {error ? (
-                            <h5> Something went wrong!</h5>
-                         ): null}
-                         </div>
-                      )}
-                      </div>
                     )}
                   </form>
                 </Box>

@@ -8,6 +8,11 @@ import Resume from "./container/Resume";
 import About from "./container/About";
 import Project from "./container/Project";
 import Contact from "./container/Contact";
+import { toast } from "react-toastify";
+
+toast.configure({
+   position: toast.POSITION.BOTTOM_RIGHT
+});
 
 ReactDOM.render(
    <Router>

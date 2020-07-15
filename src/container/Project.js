@@ -30,9 +30,9 @@ const useStyles = makeStyles((theme) => ({
     //maxWidth: 420,
     //  margin: "3rem",
     //  margin: "3rem auto",
-    marginTop: "3rem",
-    marginLeft: "3rem",
-    marginRight: "3rem",
+    //marginTop: "3rem",
+    // marginLeft: "3rem",
+    // marginRight: "3rem",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "2px",
       marginRight: "2px",
@@ -48,6 +48,17 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "2rem",
     color: "#ffffff",
   },
+  projects: {
+    marginRight: "6rem",
+    marginLeft: "6rem",
+    display: "flex",
+    paddingTop: "2rem",
+    [theme.breakpoints.down("xs")]: {
+      marginRight: "0px",
+      marginLeft: "0px",
+      display: "flex",
+    }
+  }
 }));
 
 const Project = () => {
@@ -56,7 +67,8 @@ const Project = () => {
     <Box component="div" className={classes.rootContainer}>
       <h1 className={classes.heading}>Project</h1>
       <div className={classes.line} />
-      <Grid container spacing={4}>
+      <div className={classes.projects}> 
+      <Grid container spacing={2}>
         {/* project1 Burger Builder*/}
         <Grid item xs={12} sm={6} md={6}>
           <Card className={classes.cardContainer}>
@@ -140,7 +152,7 @@ const Project = () => {
             </CardActions>
           </Card>
         </Grid>
-        {/* project3 SpaceX launce */}
+        {/* project3 SpaceX launche */}
         <Grid item xs={12} sm={6} md={6}>
           <Card className={classes.cardContainer}>
             <CardActionArea>
@@ -238,6 +250,7 @@ const Project = () => {
           </Card>
         </Grid>
       </Grid>
+      </div>
     </Box>
   );
 };
