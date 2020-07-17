@@ -60,7 +60,7 @@ const Home = () => {
       <Grid container justify="center">
         <Avatar className={classes.avatar} src={avatar} alt="deepak" />
       </Grid>
-      <h6 className="abc">HEY ! I AM</h6>
+      <h6 className="abc">HEY! I AM</h6>
       <Typography variant="h3" className={classes.title}>
         <Typed strings={["Deepak Pandey"]} typeSpeed={120} />
       </Typography>

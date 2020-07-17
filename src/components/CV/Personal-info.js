@@ -1,6 +1,7 @@
 import React from "react";
 //? import from avatar.png
 import avatar from "../../avatar.png";
+import Mypic from "../../images/mypic.jpeg";
 //? @matrial-ui import
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
@@ -46,13 +47,13 @@ function PersonalInfo() {
          <Card>
             <CardActionArea>
                <Grid container justify="center">
-                  <Avatar className={classes.avatar} src={avatar} alt="deepak" />
+                  <Avatar className={classes.avatar} src={Mypic} alt="deepak" />
                </Grid>
                <Divider className={classes.divider} variant="fullWidth" />
 
                <h2 className="text">Deepak Pandey</h2>
 
-               <h3 className="heading"> Web Developer </h3>
+               <h3 className="heading"> React Developer </h3>
 
                <Divider className={classes.divider} variant="middle" />
                <p className="paragraph">

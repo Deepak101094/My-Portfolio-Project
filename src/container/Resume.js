@@ -86,15 +86,15 @@ const Resume = () => {
          <Card className={classes.card}> 
          <CardActionArea> 
          <h1 className={classes.skill}>SkillLevel</h1>
-        <SkillLevel progress={70} SkillLevel="React"/>
-        <SkillLevel progress={70} SkillLevel="Redux"/>
-        <SkillLevel progress={50} SkillLevel="hooks"/>
-        <SkillLevel progress={60} SkillLevel="JavaSript"/>
+        <SkillLevel progress={80} SkillLevel="React"/>
+        <SkillLevel progress={80} SkillLevel="Redux"/>
+        <SkillLevel progress={75} SkillLevel="hooks"/>
+        <SkillLevel progress={70} SkillLevel="JavaSript"/>
         <SkillLevel progress={60} SkillLevel="Git"/>
         <SkillLevel progress={80} SkillLevel="HTML"/>
         <SkillLevel progress={70} SkillLevel="CSS"/>
-        <SkillLevel progress={70} SkillLevel="Material-UI"/>
-        <SkillLevel progress={50} SkillLevel="Bootstrap"/>
+        <SkillLevel progress={80} SkillLevel="Material-UI"/>
+        <SkillLevel progress={70} SkillLevel="Bootstrap"/>
          </CardActionArea>
          </Card>
         </Grid> 
