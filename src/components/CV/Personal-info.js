@@ -57,10 +57,15 @@ function PersonalInfo() {
 
                <Divider className={classes.divider} variant="middle" />
                <p className="paragraph">
-                  An experienced web developer with a strong interest in projects that require both
-                  conceptual and analytical thinking. Fully-committed to designing and developing
-                  innovative web-based materials that users will love. Always eager to learn new
-                  technologies being introduced in the market.
+                  I'm a self-taught Front-end developer and have been working from past 7 months. I
+                  work on Javascript, React, Redux, HTML, CSS, MaterialUI etc. I finished my
+                  graduation(BCA) in 2017 but unfortunately I had to start my journey as a Sales
+                  Executive at HDFC bank due to financial problems but after some time I realised
+                  that I'm at wrong place and I decided to quit that job and switch to web
+                  development. Some of my friends who were already in this field had helped and
+                  guided me in this transition. I started learning these technologies from Udemy
+                  where I found some great instructors who helped me in clearing the concepts and
+                  then I created some projects to sharp my skills and make myself industry ready.
                </p>
                <Divider className={classes.divider} variant="middle" />
                <div className="paper ml-3">
