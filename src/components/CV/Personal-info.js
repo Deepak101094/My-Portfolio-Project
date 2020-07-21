@@ -1,6 +1,5 @@
 import React from "react";
 //? import from avatar.png
-import avatar from "../../avatar.png";
 import Mypic from "../../images/mypic.jpeg";
 //? @matrial-ui import
 import { makeStyles } from "@material-ui/core/styles";
@@ -56,7 +55,7 @@ function PersonalInfo() {
                <h3 className="heading"> React Developer </h3>
 
                <Divider className={classes.divider} variant="middle" />
-               <p className="paragraph">
+               <p style={{marginLeft: "1rem"}}>
                   I'm a self-taught Front-end developer and have been working from past 7 months. I
                   work on Javascript, React, Redux, HTML, CSS, MaterialUI etc. I finished my
                   graduation(BCA) in 2017 but unfortunately I had to start my journey as a Sales

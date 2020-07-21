@@ -24,39 +24,38 @@ const useStyles = makeStyles((theme) => ({
     color: "#ffffff",
     marginLeft: "0.8rem",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "30px"
-    }
-
+      fontSize: "30px",
+    },
   },
   text: {
     color: "#ffffff",
     textAlign: "center",
     marginTop: "1rem",
-    [theme.breakpoints.down("xs")]:{
-      fontSize: "25px"
-    }
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "25px",
+    },
   },
   text2: {
     color: "#ffffff",
     textAlign: "center",
     marginTop: "1rem",
     [theme.breakpoints.down("xs")]: {
-      fontSize:"20px",
-      textAlign:"center",
+      fontSize: "20px",
+      textAlign: "center",
       marginTop: "0.5rem",
-      color: "#ffffff"
-    }
-  }
+      color: "#ffffff",
+    },
+  },
 }));
 
 function Education() {
   const classes = useStyles();
-  
+
   return (
     <div container className="container">
       <Card className={classes.card}>
         <div className={classes.image}>
-          <Typography className= {classes.heading} variant="h3">
+          <Typography className={classes.heading} variant="h3">
             {" "}
             Education{" "}
           </Typography>

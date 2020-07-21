@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../HOC/Layout";
 import "./about.css";
+import Resume from "../images/Deepak's Resume.pdf";
 //?material-ui
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { makeStyles } from "@material-ui/core/styles";
@@ -111,7 +112,13 @@ const About = () => {
             </div>
 
             <div className="button">
-              <button className="main-button"> Download CV</button>
+              <a
+                style={{ textDecoration: "none" }}
+                href={Resume}
+                download="Deepak CV"
+              >
+                <button className="main-button"> Download CV</button>
+              </a>
             </div>
           </Grid>
           <Grid item xs={0} sm={1} />

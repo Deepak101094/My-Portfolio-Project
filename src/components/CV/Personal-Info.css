@@ -1,60 +1,52 @@
 .card {
   height: 1400px;
 }
-  .divider {
-    background-color: black;
-  }
+.divider {
+  background-color: black;
+}
+.text {
+  color: #867b7b;
+  text-align: center;
+  margin: 1rem;
+  font-size: 30px;
+  font-weight: 20px;
+  margin-top: 3rem;
+}
+.heading {
+  margin-top: 3rem;
+  margin-left: 1rem;
+  font-size: 28px;
+  font-weight: 15px;
+}
+.paper {
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 786px) {
   .text {
     color: #867b7b;
     text-align: center;
     margin: 1rem;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 20px;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   .heading {
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-left: 1rem;
-    font-size: 28px;
-    font-weight: 15px;
+    font-size: 15px;
+    font-weight: 10px;
   }
- .paragraph {
+  .paragraph {
     color: "white";
     margin-left: 1rem;
     font-family: "Palatino Linotype";
-    font-size: 20px;
-    flex-direction: row;
+    font-size: 15px;
+    flex-direction: column;
   }
-  .paper {
-      flex-direction: row;
-    margin-top: 2rem;
+  .detail {
+    font-size: 15px;
+    margin-left: 2px;
   }
- 
-  @media only screen and (max-width:786px) {
-    .text {
-      color: #867b7b;
-      text-align: center;
-      margin: 1rem;
-      font-size: 20px;
-      font-weight: 20px;
-      margin-top: 2rem;
-    }
-    .heading {
-      margin-top: 1rem;
-      margin-left: 1rem;
-      font-size: 15px;
-      font-weight: 10px;
-    }
-   .paragraph {
-      color: "white";
-      margin-left: 1rem;
-      font-family: "Palatino Linotype";
-      font-size: 15px;
-      flex-direction: column;
-    }
-    .detail {
-      font-size: 15px;
-      margin-left: 2px;      
-    }
-  
-  }
+}
