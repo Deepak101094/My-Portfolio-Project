@@ -24,11 +24,9 @@ function Experience() {
           <h1 className="h1">Experience </h1>
           <Divider />
           <p className="paragraph">
-            I've 7 months of experience as a React developer. I've finished 5
-            projects using React and Redux.
-            <br />
-            my projects are Burger-Builder
-            App,E-commerce-app,SpaceX-app,Image_search-app and my-portfolio.
+            I have been working as a front-end developer in E-Developers World
+            for 2years. where i have worked on multiple projects like
+            sales-handy and car-advice.
           </p>
         </CardActionArea>
       </Card>

@@ -24,25 +24,27 @@ const useStyles = makeStyles((theme) => ({
     color: "#ffffff",
     marginLeft: "0.8rem",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "30px",
+      fontSize: "15px",
     },
   },
   text: {
     color: "#ffffff",
     textAlign: "center",
-    marginTop: "1rem",
+    marginTop: "0.2rem",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "25px",
+      fontSize: "15px",
     },
   },
   text2: {
     color: "#ffffff",
-    textAlign: "center",
-    marginTop: "1rem",
+    display: "flex",
+    justifyContent: "center",
+    alignItems:'center',
+    marginTop: "0.3rem",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "20px",
+      fontSize: "15px",
       textAlign: "center",
-      marginTop: "0.5rem",
+      marginTop: "0.2rem",
       color: "#ffffff",
     },
   },
@@ -55,19 +57,32 @@ function Education() {
     <div container className="container">
       <Card className={classes.card}>
         <div className={classes.image}>
-          <Typography className={classes.heading} variant="h3">
+          <Typography className={classes.heading} variant="h4">
             {" "}
             Education{" "}
           </Typography>
-          <Typography className={classes.text} variant="h4">
+          <Typography className={classes.text} variant="h6">
+            {" "}
+            Master of Computer Application{" "}
+          </Typography>
+          <Typography className={classes.text2} variant="p">
+            {" "}
+            Shri Ramswaroop Memorial College of Engineering and Management,Lucknow{" "}
+          </Typography>
+          <Typography className={classes.text} >
+            {" "}
+            Jun 2017 - May 2019{" "}
+          </Typography>
+
+          <Typography className={classes.text} variant="h6">
             {" "}
             Bachelor of Computer Application{" "}
           </Typography>
-          <Typography className={classes.text2} variant="h6">
+          <Typography className={classes.text2} variant="p">
             {" "}
-            M.C.R.P University, Madhya Pradesh, India{" "}
+            M.C.R.P University, Bhopal,Madhya Pradesh{" "}
           </Typography>
-          <Typography className={classes.text} variant="h5">
+          <Typography className={classes.text} >
             {" "}
             Jun 2014 - May 2017{" "}
           </Typography>

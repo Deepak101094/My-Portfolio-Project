@@ -29,18 +29,14 @@ const About = () => {
               <h1> About me </h1> <div className="line" />
               <p>
                 {" "}
-                I'm a self-taught Front-end developer and have been working from
-                past 7 months. I work on Javascript, React, Redux, HTML, CSS,
-                MaterialUI etc. I finished my graduation(BCA) in 2017 but
-                unfortunately I had to start my journey as a Sales Executive at
-                HDFC bank due to financial problems but after some time I
-                realised that I'm at wrong place and I decided to quit that job
-                and switch to web development. Some of my friends who were
-                already in this field had helped and guided me in this
-                transition. I started learning these technologies from Udemy
-                where I found some great instructors who helped me in clearing
-                the concepts and then I created some projects to sharp my skills
-                and make myself industry ready.
+                I'm a Front-end developer having 2 years of experience in creating
+            dynamic and user-friendly websites using ReactJs. I write good
+            quality code by following the best practices and I always keep the
+            user-experience and performance in mind. My daily work includes
+            creating pixel-perfect and responsive layouts and then adding life
+            to it using Javascript. My tech stack is ReactJs, Redux, HTML/CSS,
+            Bootstrap, Material UI, Javascript, NextJs, Tailwind CSS, React
+            Native, Styled Components.
               </p>
             </div>
 

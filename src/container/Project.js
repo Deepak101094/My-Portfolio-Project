@@ -6,6 +6,8 @@ import BurgerImage from "../images/burger-image.jpg";
 import EcommerceImage from "../images/ecommerce-2140603_1920.jpg";
 import SpaceXImg from "../images/spaceX.jpg";
 import ImageSearch from "../images/imge-project.jpg";
+import SalesHandy from "../images/saleshandy-screenshot.jpeg";
+import CarAdvice from "../images/caradvice.jpg";
 //? material-ui
 import { makeStyles } from "@material-ui/core/styles";
 import {
@@ -28,12 +30,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   cardContainer: {
-    //maxWidth: 420,
-    //  margin: "3rem",
-    //  margin: "3rem auto",
-    //marginTop: "3rem",
-    // marginLeft: "3rem",
-    // marginRight: "3rem",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "2px",
       marginRight: "2px",
@@ -70,6 +66,97 @@ const Project = () => {
       <div className={classes.line} />
       <div className={classes.projects}>
         <Grid container spacing={2}>
+          {/* SalesHandy */}
+          <Grid item xs={12} sm={6} md={6}>
+            <Card className={classes.cardContainer}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  alt="sales handy"
+                  height="180"
+                  image={SalesHandy}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    {" "}
+                    SalesHandy{" "}
+                  </Typography>
+                  <Typography
+                    variant="body"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    It is a sales engagement platform that enables sales teams
+                    to scale their email outreach operations seamlessly. It
+                    keeps track of emails that how many times an email is
+                    opened, whether a link in the email has been clicked or not,
+                    mail merge feature etc.
+                    <b>
+                      {" "}
+                      Technologies Used: React, Redux,NodeJs, Javascript, HTML,
+                      CSS.
+                    </b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  onClick={() => {
+                    window.open(" https://www.saleshandy.com/");
+                  }}
+                >
+                  Live Demo
+                </Button>
+              </CardActions>
+            </Card>
+          </Grid>
+          {/* CarAdvice */}
+          <Grid item xs={12} sm={6} md={6}>
+            <Card className={classes.cardContainer}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  alt="car advice"
+                  height="180"
+                  image={CarAdvice}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    {" "}
+                    CarAdvice{" "}
+                  </Typography>
+                  <Typography
+                    variant="body"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    This is an Australian website that shows Car’s Reviews,
+                    Ratings, Comparisons, News etc on their platform.In this
+                    application, all the pages need to by dynamic, for
+                    eg:-/reviews/car-name.
+                    Headless Wordpress is used for APIs .
+                    Users can manage the content of the website from Wordpress.
+                    We’ve used NextJs for server-side rendering and dynamic pages.
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  onClick={() => {
+                    window.open(
+                      " https://www.caradvice.com.au/ "
+                    );
+                  }}
+                >
+                  Live Demo
+                </Button>
+              </CardActions>
+            </Card>
+          </Grid>
           {/* project1 Burger Builder*/}
           <Grid item xs={12} sm={6} md={6}>
             <Card className={classes.cardContainer}>
